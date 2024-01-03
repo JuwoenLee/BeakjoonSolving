@@ -2,17 +2,17 @@ package BeakjoonSolving;
 
 import java.util.Scanner;
 
-public class Main {
+public class No2446 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
         scan.close();
 
         for(int i = 0; i < N; i++) {
-            for(int j = 0; j < i; j++) {
+            for(int blank = 0; blank < i; blank++) {
                 System.out.print(" ");
             }
-            for(int k = 0; k < (2 * N - 1) - (2 * i); k++){
+            for(int star = 0; star < (2 * N - 1) - (2 * i); star++){
                 System.out.print("*");
             }
             System.out.println();
